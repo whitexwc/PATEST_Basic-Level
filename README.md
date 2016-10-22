@@ -1,2 +1,1 @@
-# PATEST_Class_b
-PAT乙级训练题
+# 不定期写一两道更新
