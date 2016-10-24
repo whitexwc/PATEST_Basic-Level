@@ -26,7 +26,7 @@ int main()
 }
 bool panduan(string s)
 {
-        int k=0,len=0,m=0,p=0,t=0,h=0;
+        int k=0,len=0,m=0,p=0,t=0,h=0;//变量设太多，有点蠢啊。。
         for(k=0;s[k]!=NULL;k++)
         {
             ++len;
@@ -56,7 +56,7 @@ bool panduan(string s)
             else
             {
                 if((p==1)&&(t==len)) return true;
-                m=t-p-2;//b��a��λ��
+                m=t-p-2;
                 if(len-t-m*(p-1)>0) return true;
                 else return false;
             }
