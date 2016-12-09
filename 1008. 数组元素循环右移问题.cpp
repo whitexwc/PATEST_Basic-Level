@@ -2,7 +2,7 @@
 using namespace std;
 struct c
 {
-    char data;
+    int data;
     c *next;
 };
 int main()
@@ -10,8 +10,8 @@ int main()
     c *head,*toe,*p1,*p2,*p,*p0,*head1;
     int n,m,i=0;
     cin>>n>>m;
-    char *a=new char[n*2-1];
-    for(;i<n;i++)   cin>>a[i];//ÕæÄáÂêÆæ¹Ö¾¹È»ÊÇËùÓĞÕûÊı
+    int *a=new int[n];
+    for(;i<n;i++)   cin>>a[i];
     head=NULL;
     i=0;
     while(i<n)
@@ -42,8 +42,8 @@ int main()
     p0=head;
     for(i=0;i<n-m-1;i++)
         p0=p0->next;
-    p=p0->next;//¼ÇÂ¼¶Ïµã´¦µÚÒ»¸öÖµ
-    p0->next=NULL;//Çå³ı¶Ïµã´¦Î²Ö¸Õë
+    p=p0->next;//è®°å½•æ–­ç‚¹å¤„ç¬¬ä¸€ä¸ªå€¼
+    p0->next=NULL;//æ¸…é™¤æ–­ç‚¹å¤„å°¾æŒ‡é’ˆ
     p2->next=head;
     for(i=0;i<n-1;i++)
     {
