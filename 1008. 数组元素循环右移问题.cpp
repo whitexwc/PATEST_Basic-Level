@@ -28,7 +28,7 @@ int main()
         ++i;
     }
     while(m>n) m-=n;
-    if(m==n)
+    if(m==n||m==0)
     {
         head1=head;
         for(i=0;i<n-1;i++)
