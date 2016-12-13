@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    int sum1=0,sum2=0,sum3=0,sum4=0,a5=0,k=1,i=0,j=0,n;
+    int sum1=0,sum2=0,sum3=0,sum4=0,a5=0,k=1,i=0,j=0,n,flag=0;
     cin>>n;
     int *a=new int[n];
     for(;i<n;i++) cin>>a[i];
@@ -13,6 +13,7 @@ int main()
         else if(a[i]%5==1) {
             sum2+=k*a[i];
             k=-1*k;
+            flag=1;
         }
         else if(a[i]%5==2) sum3++;
         else if(a[i]%5==3) {sum4+=a[i];j++;}
@@ -20,7 +21,7 @@ int main()
     }
     if(sum1!=0) cout<<sum1<<' ';
     else cout<<"N ";
-    if(sum2!=0) cout<<sum2<<' ';
+    if(flag!=0) cout<<sum2<<' ';
     else cout<<"N ";
     if(sum3!=0) cout<<sum3<<' ';
     else cout<<"N ";
