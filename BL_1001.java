@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class BL_1001 {
+public class Main {
 	public static void main(String []args){
 		int i=0,n;
 		Scanner input=new Scanner(System.in);
@@ -15,5 +15,4 @@ public class BL_1001 {
 			}
 		System.out.print(i);
 	}
-
 }
